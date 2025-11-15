@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our History - JDA International</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.6; color: #333; background: #f9f9f9; }
+        header { text-align: center; padding: 20px; background: #004080; color: white; }
+        main { max-width: 800px; margin: 0 auto; }
+        section { background: white; margin: 20px 0; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        ul { padding-left: 20px; }
+        nav { text-align: center; margin: 20px 0; }
+        nav a { margin: 0 10px; color: #004080; text-decoration: none; font-weight: bold; }
+        footer { text-align: center; margin-top: 40px; padding: 10px; background: #004080; color: white; }
+
+        /* Gallery Styles */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px 0; }
+        .gallery-item { position: relative; overflow: hidden; border-radius: 5px; }
+        .gallery-item img { width: 100%; height: auto; display: block; transition: transform 0.3s; }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-item figcaption { text-align: center; font-size: 0.9em; padding: 5px 0; background: rgba(0,0,0,0.7); color: white; position: absolute; bottom: 0; width: 100%; }
+        /* Modal for Enlarged Images */
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; justify-content: center; align-items: center; }
+        .modal:target { display: flex; }
+        .modal img { max-width: 90%; max-height: 80%; border: 5px solid white; border-radius: 5px; }
+        .modal-close { position: absolute; top: 20px; right: 20px; color: white; font-size: 1.5em; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our 32-Year History</h1>
+        <p>From Uzbekistan's Post-Soviet Era to Afghan Resilience</p>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="contact.html">Contact & Legacy</a>
+        </nav>
+        <section>
+            <h2>Founding & Early Years (1993-2000)</h2>
+            <p>In September 1993, Bob Hedlund— inspired by his time in Central Asia after the Soviet Union's breakup—founded JDA International as a U.S. 501(c)(3) nonprofit in Grand Junction, Colorado. Starting in Uzbekistan, we equipped emerging nations with tools for self-sufficiency, focusing on agriculture, education, and community health to build foundations for the future.</p>
+            <ul>
+                <li>Established operations in Uzbekistan to meet immediate needs in land, people, and opportunity.</li>
+                <li>Emphasized local integration: Training farmers, providing clean water systems, and fostering economic growth.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Expansion to Afghanistan (2001-2020)</h2>
+            <p>In 2001, with USAID funding, we opened a headquarters and agricultural center in Mazar-i-Sharif, northern Afghanistan. Over two decades, JDA became a key partner in transformational development, subcontracting on projects like USAID's Regional Agricultural Development Program-North (RADP-North) in provinces Baghlan, Balkh, Jawzjan, and Samangan.</p>
+            <ul>
+                <li><strong>Agriculture:</strong> Improved wheat productivity via conservation techniques, 2-wheel tractors (enabling farmers to cultivate 5x faster), and introductions of strawberries and safflower. Boosted household incomes and food security.</li>
+                <li><strong>Clean Water:</strong> Drilled 74 wells and hand pumps, providing safe drinking water to 68,000+ people in northern Afghanistan.</li>
+                <li><strong>Infrastructure & Relief:</strong> Built roads, homes, irrigation systems; distributed food/non-food aid; ran self-help programs for poverty alleviation.</li>
+                <li><strong>Health & Education:</strong> Community health training, women's empowerment, and partnerships with universities like Balkh and Faryab for agronomy labs.</li>
+            </ul>
+            <p>Our Afghan staff—local experts—ensured culturally sensitive implementation, aligning with community practices.</p>
+        </section>
+        <section>
+            <h2>Recent Impact & Closure (2021-2025)</h2>
+            <p>Amid the 2021 Taliban takeover, JDA led evacuation efforts for 568-600 Afghan collaborators and families via Special Immigrant Visas, relocating many to the U.S. (including ~70 to Grand Junction). In 2023, we launched the ARISE program (with Grand Valley Resettlement Program) for refugee support: tuition scholarships, job training, internships, and wage incentives for employers.</p>
+            <p>After 32 years, JDA is closing to ensure sustainable legacy. Our projects' seeds—resilient farms, flowing wells, empowered families—continue to grow.</p>
+        </section>
+        <section>
+            <h2>Our Work in Pictures</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="#img1"><img src="https://via.placeholder.com/300x200?text=Well+Construction" alt="Well construction in Afghanistan"></a>
+                    <figcaption>Drilling wells for clean water, serving 68,000+ people</figcaption>
+                    <div id="img1" class="modal">
+                        <a href="#close" class="modal-close">&times;</a>
+                        <img src="https://via.placeholder.com/300x200?text=Well+Construction" alt="Well construction in Afghanistan">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#img2"><img src="https://via.placeholder.com/300x200?text=Farming+Training" alt="Farmers training in Uzbekistan"></a>
+                    <figcaption>Training farmers in Uzbekistan, 1990s</figcaption>
+                    <div id="img2" class="modal">
+                        <a href="#close" class="modal-close">&times;</a>
+                        <img src="https://via.placeholder.com/300x200?text=Farming+Training" alt="Farmers training in Uzbekistan">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#img3"><img src="https://via.placeholder.com/300x200?text=2-Wheel+Tractor" alt="2-wheel tractor in Afghanistan"></a>
+                    <figcaption>Introducing 2-wheel tractors for faster farming</figcaption>
+                    <div id="img3" class="modal">
+                        <a href="#close" class="modal-close">&times;</a>
+                        <img src="https://via.placeholder.com/300x200?text=2-Wheel+Tractor" alt="2-wheel tractor in Afghanistan">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#img4"><img src="https://via.placeholder.com/300x200?text=Strawberry+Farming" alt="Strawberry farming initiative"></a>
+                    <figcaption>Strawberry farming to boost incomes</figcaption>
+                    <div id="img4" class="modal">
+                        <a href="#close" class="modal-close">&times;</a>
+                        <img src="https://via.placeholder.com/300x200?text=Strawberry+Farming" alt="Strawberry farming initiative">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#img5"><img src="https://via.placeholder.com/300x200?text=Resettlement+Support" alt="Afghan resettlement in Grand Junction"></a>
+                    <figcaption>Supporting Afghan resettlement, 2021-2023</figcaption>
+                    <div id="img5" class="modal">
+                        <a href="#close" class="modal-close">&times;</a>
+                        <img src="https://via.placeholder.com/300x200?text=Resettlement+Support" alt="Afghan resettlement in Grand Junction">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#img6"><img src="https://via.placeholder.com/300x200?text=Community+Health" alt="Community health training"></a>
+                    <figcaption>Health training for Afghan communities</figcaption>
+                    <div id="img6" class="modal">
+                        <a href="#close" class="modal-close">&times;</a>
+                        <img src="https://via.placeholder.com/300x200?text=Community+Health" alt="Community health training">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 JDA International. Sources: GuideStar, Devex, Grand Junction Daily Sentinel.</p>
+    </footer>
+</body>
+</html>
