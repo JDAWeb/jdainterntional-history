@@ -5,76 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our History - JDA International</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background: #f9f9f9; }
-        a { color: #004080; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body {font-family:Arial,sans-serif;margin:0;padding:0;line-height:1.7;color:#333;background:#f9f9f9;}
+        a {color:#004080;text-decoration:none;}
+        a:hover {text-decoration:underline;}
 
-        /* Header with logo on left */
-        header {
-            background: #004080;
-            color: white;
-            padding: 15px 20px;
-        }
-        .header-container {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .logo-img { height: 100px; width: auto; max-width: 250px; }
-        .title-right { flex: 1; text-align: left; }
-        .title-right h1 { margin: 0; font-size: 1.9em; }
-        .title-right p { margin: 5px 0 0; font-size: 1.15em; opacity: 0.95; }
-        @media (max-width: 640px) {
-            .header-container { flex-direction: column; text-align: center; }
-            .logo-img { height: 75px; }
-            .title-right h1 { font-size: 1.6em; }
+        /* Header – logo left */
+        header {background:#004080;color:white;padding:15px 20px;}
+        .header-container {display:flex;align-items:center;flex-wrap:wrap;gap:20px;max-width:1200px;margin:0 auto;}
+        .logo-img {height:100px;width:auto;max-width:250px;}
+        .title-right {flex:1;text-align:left;}
+        .title-right h1 {margin:0;font-size:1.9em;}
+        .title-right p {margin:5px 0 0;font-size:1.15em;opacity:0.95;}
+        @media (max-width:640px) {
+            .header-container {flex-direction:column;text-align:center;}
+            .logo-img {height:75px;}
+            .title-right h1 {font-size:1.6em;}
         }
 
-        nav { text-align: center; padding: 15px; background: #003060; }
-        nav a { color: white; margin: 0 15px; font-weight: bold; }
+        nav {background:#003060;padding:15px;text-align:center;}
+        nav a {color:white;margin:0 25px;font-weight:bold;font-size:1.1em;}
 
-        main { max-width: 1100px; margin: 0 auto; padding: 20px; }
-        section { background: white; margin: 25px 0; padding: 25px; border-radius: 8px; box-shadow: 0 3px 12px rgba(0,0,0,0.1); }
+        main {max-width:1100px;margin:30px auto;padding:0 20px;}
+        section {background:white;padding:32px;margin-bottom:35px;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+        h2 {color:#004080;border-bottom:3px solid #004080;padding-bottom:10px;margin-top:0;font-size:1.8em;}
+        ul {padding-left:22px;}
 
         /* Gallery */
         .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:24px;
+            margin:35px 0;
         }
         .gallery-item {
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            background: #fff;
+            overflow:hidden;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.15);
+            background:#fff;
+            transition:transform 0.3s;
         }
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.4s ease;
-        }
-        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-item:hover {transform:translateY(-6px);}
+        .gallery-item img {width:100%;height:auto;display:block;transition:transform 0.4s;}
+        .gallery-item:hover img {transform:scale(1.08);}
         .gallery-item figcaption {
-            padding: 14px;
-            text-align: center;
-            font-size: 0.98em;
-            background: #f8f8f8;
-            color: #333;
+            padding:15px;
+            text-align:center;
+            background:#f8f8f8;
+            font-size:0.98em;
+            color:#333;
         }
 
-        /* Lightbox modal */
-        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.94); z-index: 1000; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; }
-        .modal:target { display: flex; }
-        .modal img { max-width: 90%; max-height: 85vh; border: 6px solid white; border-radius: 6px; box-shadow: 0 10px 40px rgba(0,0,0,0.7); }
-        .close-btn { position: absolute; top: 20px; right: 30px; color: white; font-size: 44px; font-weight: bold; text-decoration: none; }
-        .close-btn:hover { color: #ff5a5a; }
+        /* Lightbox */
+        .modal {display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.95);z-index:1000;justify-content:center;align-items:center;padding:20px;box-sizing:border-box;}
+        .modal:target {display:flex;}
+        .modal img {max-width:92%;max-height:88vh;border:8px solid white;border-radius:8px;box-shadow:0 15px 40px rgba(0,0,0,0.7);}
+        .close-btn {position:absolute;top:20px;right:30px;color:white;font-size:48px;font-weight:bold;text-decoration:none;}
+        .close-btn:hover {color:#ff5a5a;}
 
-        footer { text-align: center; padding: 20px; background: #004080; color: white; margin-top: 40px; }
+        footer {background:#004080;color:white;text-align:center;padding:25px;margin-top:50px;}
     </style>
 </head>
 <body>
@@ -82,9 +70,7 @@
 <header>
     <div class="header-container">
         <div class="logo-left">
-            <a href="index.html">
-                <img src="jda-logo.png" alt="JDA International Logo" class="logo-img">
-            </a>
+            <a href="index.html"><img src="jda-logo.png" alt="JDA International Logo" class="logo-img"></a>
         </div>
         <div class="title-right">
             <h1>Joint Development Associates International</h1>
@@ -102,18 +88,32 @@
 <main>
 
     <section>
-        <h2>A Legacy of Impact (1993–2025)</h2>
-        <p>From post-Soviet Uzbekistan to resilient communities in Afghanistan, JDA International has worked for over three decades to provide clean water, sustainable agriculture, education, and hope.</p>
+        <h2>Founding & Early Years (1993–2000)</h2>
+        <p>In September 1993, Bob Hedlund— inspired by his time in Central Asia after the Soviet Union's breakup—founded JDA International as a U.S. 501(c)(3) nonprofit in Grand Junction, Colorado. Starting in Uzbekistan, we equipped emerging nations with tools for self-sufficiency, focusing on agriculture, education, and community health to build foundations for the future.</p>
         <ul>
-            <li>Founded in Grand Junction, Colorado by Bob Hedlund</li>
-            <li>74 wells bringing clean water to 68,000+ people</li>
-            <li>Introduced 2-wheel tractors, strawberries, and conservation agriculture</li>
-            <li>Led evacuation and resettlement of 568–600 Afghan colleagues and families in 2021</li>
-            <li>Closing in 2025 — our work continues through partners and the people we served</li>
+            <li>Established operations in Uzbekistan to meet immediate needs in land, people, and opportunity.</li>
+            <li>Emphasized local integration: Training farmers, providing clean water systems, and fostering economic growth.</li>
         </ul>
     </section>
 
     <section>
+        <h2>Expansion to Afghanistan (2001–2020)</h2>
+        <p>In 2001, with USAID funding, we opened a headquarters and agricultural center in Mazar-i-Sharif, northern Afghanistan. Over two decades, JDA became a key partner in transformational development, subcontracting on projects like USAID's Regional Agricultural Development Program-North (RADP-North) in provinces Baghlan, Balkh, Jawzjan, and Samangan.</p>
+        <ul>
+            <li><strong>Agriculture:</strong> Improved wheat productivity via conservation techniques, 2-wheel tractors (enabling farmers to cultivate 5x faster), and introductions of strawberries and safflower. Boosted household incomes and food security.</li>
+            <li><strong>Clean Water:</strong> Drilled 74 wells and hand pumps, providing safe drinking water to 68,000+ people in northern Afghanistan.</li>
+            <li><strong>Infrastructure & Relief:</strong> Built roads, homes, irrigation systems; distributed food/non-food aid; ran self-help programs for poverty alleviation.</li>
+            <li><strong>Health & Education:</strong> Community health training, women's empowerment, and partnerships with universities like Balkh and Faryab for agronomy labs.</li>
+        </ul>
+        <p>Our Afghan staff—local experts—ensured culturally sensitive implementation, aligning with community practices.</p>
+    </section>
+
+    <section>
+        <h2>Recent Impact & Closure (2021–2025)</h2>
+        <p>Amid the 2021 Taliban takeover, JDA led evacuation efforts for 568–600 Afghan collaborators and families via Special Immigrant Visas, relocating many to the U.S. (including ~70 to Grand Junction). In 2023, we launched the ARISE program (with Grand Valley Resettlement Program) for refugee support: tuition scholarships, job training, internships, and wage incentives for employers.</p>
+        <p>After 32 years, JDA is closing to ensure sustainable legacy. Our projects' seeds—resilient farms, flowing wells, empowered families—continue to grow.</p>
+    </section>
+
         <h2>Our Work in Pictures</h2>
         <p style="text-align:center; margin-bottom:20px; color:#555;">Click any photo to view larger</p>
 
@@ -169,4 +169,5 @@
 </body>
 
 </html>
+
 
