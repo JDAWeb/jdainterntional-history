@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our History - JDA International</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; background: #f9f9f9; }
+        a { color: #004080; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Header with logo on left */
+        header {
+            background: #004080;
+            color: white;
+            padding: 15px 20px;
+        }
+        .header-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo-img { height: 90px; width: auto; max-width: 220px; }
+        .title-right { flex: 1; text-align: left; }
+        .title-right h1 { margin: 0; font-size: 1.9em; }
+        .title-right p { margin: 5px 0 0; font-size: 1.15em; opacity: 0.95; }
+        @media (max-width: 640px) {
+            .header-container { flex-direction: column; text-align: center; }
+            .logo-img { height: 70px; }
+            .title-right h1 { font-size: 1.6em; }
+        }
+
+        nav { text-align: center; padding: 15px; background: #003060; }
+        nav a { color: white; margin: 0 15px; font-weight: bold; }
+
+        main { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        section { background: white; margin: 25px 0; padding: 25px; border-radius: 8px; box-shadow: 0 3px 12px rgba(0,0,0,0.1); }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            background: #fff;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-item figcaption {
+            padding: 14px;
+            text-align: center;
+            font-size: 0.98em;
+            background: #f8f8f8;
+            color: #333;
+        }
+
+        /* Lightbox modal */
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.94); z-index: 1000; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; }
+        .modal:target { display: flex; }
+        .modal img { max-width: 90%; max-height: 85vh; border: 6px solid white; border-radius: 6px; box-shadow: 0 10px 40px rgba(0,0,0,0.7); }
+        .close-btn { position: absolute; top: 20px; right: 30px; color: white; font-size: 44px; font-weight: bold; text-decoration: none; }
+        .close-btn:hover { color: #ff5a5a; }
+
+        footer { text-align: center; padding: 20px; background: #004080; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo-left">
+            <a href="index.html">
+                <img src="jda-logo.png" alt="JDA International Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="title-right">
+            <h1>Joint Development Associates International</h1>
+            <p>Transforming Lives in Central Asia for 32 Years</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="history.html">Our History</a> |
+    <a href="contact.html">Contact & Legacy</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>A Legacy of Impact (1993–2025)</h2>
+        <p>From post-Soviet Uzbekistan to resilient communities in Afghanistan, JDA International has worked for over three decades to provide clean water, sustainable agriculture, education, and hope.</p>
+        <ul>
+            <li>Founded in Grand Junction, Colorado by Bob Hedlund</li>
+            <li>74 wells bringing clean water to 68,000+ people</li>
+            <li>Introduced 2-wheel tractors, strawberries, and conservation agriculture</li>
+            <li>Led evacuation and resettlement of 568–600 Afghan colleagues and families in 2021</li>
+            <li>Closing in 2025 — our work continues through partners and the people we served</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Our Work in Pictures</h2>
+        <p style="text-align:center; margin-bottom:20px; color:#555;">Click any photo to view larger</p>
+
+        <div class="gallery-grid">
+
+            <figure class="gallery-item">
+                <a href="#img-school"><img src="school-construction.jpg" alt="School construction"></a>
+                <figcaption>School Construction – [add caption here]</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <a href="#img-wash"><img src="wash-training.jpg" alt="WASH hygiene training"></a>
+                <figcaption>WASH Training – [add caption here]</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <a href="#img-well"><img src="well-construction.jpg" alt="Well construction"></a>
+                <figcaption>Well Construction – [add caption here]</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <a href="#img-sheep"><img src="livelihood-sheep.jpg" alt="Sheep distribution program"></a>
+                <figcaption>Livelihood Sheep Program – [add caption here]</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <a href="#img-farmer"><img src="farmer-training.jpg" alt="Farmer training"></a>
+                <figcaption>Farmer Training – [add caption here]</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <a href="#img-tractor"><img src="2-wheel-tractor.jpg" alt="2-wheel tractor"></a>
+                <figcaption>2-Wheel Tractor Program – [add caption here]</figcaption>
+            </figure>
+
+        </div>
+
+        <!-- Lightbox modals -->
+        <div id="img-school" class="modal"><a href="#close" class="close-btn">×</a><img src="school-construction.jpg" alt="School construction"></div>
+        <div id="img-wash" class="modal"><a href="#close" class="close-btn">×</a><img src="wash-training.jpg" alt="WASH training"></div>
+        <div id="img-well" class="modal"><a href="#close" class="close-btn">×</a><img src="well-construction.jpg" alt="Well construction"></div>
+        <div id="img-sheep" class="modal"><a href="#close" class="close-btn">×</a><img src="livelihood-sheep.jpg" alt="Sheep program"></div>
+        <div id="img-farmer" class="modal"><a href="#close" class="close-btn">×</a><img src="farmer-training.jpg" alt="Farmer training"></div>
+        <div id="img-tractor" class="modal"><a href="#close" class="close-btn">×</a><img src="2-wheel-tractor.jpg" alt="2-wheel tractor"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 JDA International — Preserving a 32-Year Legacy</p>
+</footer>
+
+</body>
+</html>
