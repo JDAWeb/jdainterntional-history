@@ -29,14 +29,20 @@
 
         main {max-width:1200px;margin:50px auto;padding:0 20px;}
 
-        .hero-intro {
-            background:linear-gradient(rgba(0,64,128,0.85),rgba(0,64,128,0.85)),url('well-construction.jpg') center/cover no-repeat;
-            color:white;padding:60px 40px;text-align:center;border-radius:15px;margin-bottom:50px;box-shadow:0 10px 30px rgba(0,0,0,0.2);
-            animation:fadeIn 1.5s ease-out;
-        }
-        .hero-intro h2 {font-size:2.8em;margin:0 0 15px;}
-        .hero-intro p {font-size:1.3em;max-width:800px;margin:0 auto;opacity:0.95;}
-
+       .hero-intro {
+    background: rgba(0, 64, 128, 0.82) url('well-construction.jpg') center/cover no-repeat;
+    background-blend-mode: overlay;
+    color: white;
+    padding: 70px 40px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.hero-intro h2 {font-size:2.8em;margin:0 0 15px;text-shadow:2px 2px 8px rgba(0,0,0,0.7);}
+.hero-intro p {font-size:1.3em;max-width:800px;margin:0 auto;text-shadow:1px 1px 6px rgba(0,0,0,0.7);}
+        
+     
         section {background:white;padding:45px;margin-bottom:50px;border-radius:15px;box-shadow:0 8px 25px rgba(0,0,0,0.12);transition:transform 0.3s;}
         section:hover {transform:translateY(-5px);}
         h2 {color:#004080;font-size:2.2em;margin-top:0;text-align:center;position:relative;padding-bottom:15px;}
@@ -167,10 +173,10 @@
             Definitive timeline — most major milestones, project, and story from JDA's founding to closure.
         </p>
 
-        <iframe src="JDA-Timeline" class="timeline-embed" allowfullscreen></iframe>
+        <iframe src="timeline" class="timeline-embed" allowfullscreen></iframe>
 
         <p style="text-align:center;margin-top:30px;">
-            <a href="JDA-Timeline.pdf" class="download-btn" target="_blank" style="font-size:1.2em;padding:15px 40px;">📄 Download Full Timeline PDF</a>
+            <a href="timeline.pdf" class="download-btn" target="_blank" style="font-size:1.2em;padding:15px 40px;">📄 Download Full Timeline PDF</a>
         </p>
     </section>
 
@@ -183,3 +189,4 @@
 </body>
 
 </html>
+
