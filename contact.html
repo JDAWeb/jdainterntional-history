@@ -13,53 +13,24 @@
         nav { text-align: center; margin: 20px 0; }
         nav a { margin: 0 10px; color: #004080; text-decoration: none; font-weight: bold; }
         footer { text-align: center; margin-top: 40px; padding: 10px; background: #004080; color: white; }
-        .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 15px 20px;
-    background: #004080;
-    color: white;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+       .header-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo-img { height: 90px; width: auto; max-width: 220px; }
+        .title-right { flex: 1; text-align: left; }
+        .title-right h1 { margin: 0; font-size: 1.9em; }
+        .title-right p { margin: 5px 0 0; font-size: 1.15em; opacity: 0.95; }
+        @media (max-width: 640px) {
+            .header-container { flex-direction: column; text-align: center; }
+            .logo-img { height: 70px; }
+            .title-right h1 { font-size: 1.6em; }
+        } 
 
-.logo-left img.logo-img {
-    height: 100px;
-    width: auto;
-    max-width: 250px;
-}
-
-.title-right {
-    text-align: left;
-    flex: 1;
-}
-
-.title-right h1 {
-    margin: 0;
-    font-size: 1.8em;
-}
-
-.title-right p {
-    margin: 5px 0 0;
-    font-size: 1.1em;
-    opacity: 0.9;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 640px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-    .logo-left img.logo-img {
-        height: 75px;
-    }
-    .title-right h1 {
-        font-size: 1.5em;
-    }
-}
     </style>
 </head>
 <body>
@@ -110,7 +81,6 @@
 </body>
 
 </html>
-
 
 
 
