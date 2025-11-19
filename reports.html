@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Reports & Timeline - JDA International</title>
+    <style>
+        body {font-family:Arial,sans-serif;margin:0;padding:0;line-height:1.7;color:#333;background:linear-gradient(to bottom,#f0f4f8,#ffffff);}
+        a {color:#004080;text-decoration:none;}
+        a:hover {text-decoration:underline;}
+
+        /* Header – logo left */
+        header {background:#004080;color:white;padding:20px 20px;box-shadow:0 4px 15px rgba(0,0,0,0.15);}
+        .header-container {display:flex;align-items:center;flex-wrap:wrap;gap:20px;max-width:1200px;margin:0 auto;}
+        .logo-img {height:100px;width:auto;max-width:240px;transition:transform 0.3s;}
+        .logo-img:hover {transform:scale(1.05);}
+        .title-right {flex:1;text-align:left;}
+        .title-right h1 {margin:0;font-size:2.1em;letter-spacing:0.5px;}
+        .title-right p {margin:5px 0 0;font-size:1.2em;opacity:0.95;}
+        @media (max-width:640px) {
+            .header-container {flex-direction:column;text-align:center;}
+            .logo-img {height:75px;}
+            .title-right h1 {font-size:1.7em;}
+        }
+
+        nav {background:#002b5c;padding:18px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.1);}
+        nav a {color:white;margin:0 22px;font-weight:bold;font-size:1.15em;transition:color 0.3s;}
+        nav a:hover {color:#a0d8ff;text-decoration:none;}
+
+        main {max-width:1200px;margin:50px auto;padding:0 20px;}
+
+        .hero-intro {
+            background:linear-gradient(rgba(0,64,128,0.85),rgba(0,64,128,0.85)),url('well-construction.jpg') center/cover no-repeat;
+            color:white;padding:60px 40px;text-align:center;border-radius:15px;margin-bottom:50px;box-shadow:0 10px 30px rgba(0,0,0,0.2);
+            animation:fadeIn 1.5s ease-out;
+        }
+        .hero-intro h2 {font-size:2.8em;margin:0 0 15px;}
+        .hero-intro p {font-size:1.3em;max-width:800px;margin:0 auto;opacity:0.95;}
+
+        section {background:white;padding:45px;margin-bottom:50px;border-radius:15px;box-shadow:0 8px 25px rgba(0,0,0,0.12);transition:transform 0.3s;}
+        section:hover {transform:translateY(-5px);}
+        h2 {color:#004080;font-size:2.2em;margin-top:0;text-align:center;position:relative;padding-bottom:15px;}
+        h2::after {content:'';position:absolute;bottom:0;left:50%;width:100px;height:4px;background:#004080;transform:translateX(-50%);border-radius:2px;}
+
+        .reports-grid {
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:30px;
+            margin:40px 0;
+        }
+        .report-card {
+            background:#ffffff;
+            padding:30px 25px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 8px 20px rgba(0,0,0,0.1);
+            transition:all 0.4s ease;
+        }
+        .report-card:hover {
+            transform:translateY(-12px);
+            box-shadow:0 20px 40px rgba(0,64,128,0.2);
+        }
+        .report-card a {
+            font-size:1.35em;
+            font-weight:bold;
+            color:#004080;
+            display:block;
+            margin-bottom:15px;
+        }
+        .download-btn {
+            display:inline-block;
+            background:#004080;
+            color:white;
+            padding:12px 30px;
+            border-radius:50px;
+            font-weight:bold;
+            transition:background 0.3s;
+        }
+        .download-btn:hover {
+            background:#002b5c;
+            text-decoration:none;
+        }
+
+        .timeline-embed {
+            width:100%;
+            height:1000px;
+            border:none;
+            border-radius:15px;
+            box-shadow:0 10px 35px rgba(0,0,0,0.2);
+            margin:40px 0;
+        }
+
+        @keyframes fadeIn {
+            from {opacity:0; transform:translateY(30px);}
+            to {opacity:1; transform:translateY(0);}
+        }
+
+        footer {background:#004080;color:white;text-align:center;padding:35px;margin-top:80px;}
+        footer p {margin:0;font-size:1.1em;}
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo-left">
+            <a href="index.html"><img src="jda-logo.png" alt="JDA International Logo" class="logo-img"></a>
+        </div>
+        <div class="title-right">
+            <h1>Joint Development Associates International</h1>
+            <p>Transforming Lives in Central Asia for 32 Years</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="history.html">Our History</a> |
+    <a href="reports.html">Annual Reports & Timeline</a> |
+    <a href="contact.html">Contact & Legacy</a>
+</nav>
+
+<main>
+
+    <div class="hero-intro">
+        <h2>Annual Reports & Full Timeline</h2>
+        <p>Explore the complete story of JDA's 32-year journey through our detailed annual reports and Bob Hedlund's comprehensive timeline.</p>
+    </div>
+
+    <section>
+        <h2>Annual Reports (2015–2020)</h2>
+        <p style="text-align:center;font-size:1.2em;color:#555;max-width:900px;margin:0 auto 40px;">
+            These reports showcase the peak years of our work — wells drilled, farmers trained, families lifted out of poverty, and lives changed forever.
+        </p>
+
+        <div class="reports-grid">
+            <div class="report-card">
+                <a href="2015-annual-report.pdf" target="_blank">2015 Annual Report</a>
+                <p><a href="2015-annual-report.pdf" class="download-btn" target="_blank">📄 Open / Download PDF</a></p>
+            </div>
+            <div class="report-card">
+                <a href="2016-annual-report.pdf" target="_blank">2016 Annual Report</a>
+                <p><a href="2016-annual-report.pdf" class="download-btn" target="_blank">📄 Open / Download PDF</a></p>
+            </div>
+            <div class="report-card">
+                <a href="2017-annual-report.pdf" target="_blank">2017 Annual Report</a>
+                <p><a href="2017-annual-report.pdf" class="download-btn" target="_blank">📄 Open / Download PDF</a></p>
+            </div>
+            <div class="report-card">
+                <a href="2018-annual-report.pdf" target="_blank">2018 Annual Report</a>
+                <p><a href="2018-annual-report.pdf" class="download-btn" target="_blank">📄 Open / Download PDF</a></p>
+            </div>
+            <div class="report-card">
+                <a href="2019-annual-report.pdf" target="_blank">2019 Annual Report</a>
+                <p><a href="2019-annual-report.pdf" class="download-btn" target="_blank">📄 Open / Download PDF</a></p>
+            </div>
+            <div class="report-card">
+                <a href="2020-annual-report.pdf" target="_blank">2020 Annual Report</a>
+                <p><a href="2020-annual-report.pdf" class="download-btn" target="_blank">📄 Open / Download PDF</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Complete 32-Year Timeline (1993–2025)</h2>
+        <p style="text-align:center;font-size:1.2em;color:#555;max-width:900px;margin:0 auto 30px;">
+            Bob Hedlund's definitive timeline — every major milestone, project, and story from JDA's founding to closure.
+        </p>
+
+        <iframe src="JDA-Timeline-BH-3-34-22.pdf" class="timeline-embed" allowfullscreen></iframe>
+
+        <p style="text-align:center;margin-top:30px;">
+            <a href="JDA-Timeline-BH-3-34-22.pdf" class="download-btn" target="_blank" style="font-size:1.2em;padding:15px 40px;">📄 Download Full Timeline PDF</a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 JDA International — Preserving a 32-Year Legacy of Hope & Impact</p>
+</footer>
+
+</body>
+</html>
