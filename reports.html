@@ -14,40 +14,20 @@
         .logo-img {height:100px;width:auto;max-width:240px;transition:transform 0.3s;}
         .logo-img:hover {transform:scale(1.05);}
         .title-right {flex:1;text-align:left;}
-        .title-right h1 {margin:0;font-size:2.1em;letter-spacing:0.5px;}
+        .title-right h1 {margin:0;font-size:2.1em;}
         .title-right p {margin:5px 0 0;font-size:1.2em;opacity:0.95;}
-        @media (max-width:640px) {
-            .header-container {flex-direction:column;text-align:center;}
-            .logo-img {height:75px;}
-            .title-right h1 {font-size:1.7em;}
-        }
+        @media (max-width:640px) {.header-container {flex-direction:column;text-align:center;}.logo-img {height:75px;}}
 
         nav {background:#002b5c;padding:18px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.1);}
-        nav a {color:white;margin:0 22px;font-weight:bold;font-size:1.15em;transition:color 0.3s;}
-        nav a:hover {color:#a0d8ff;text-decoration:none;}
+        nav a {color:white;margin:0 22px;font-weight:bold;font-size:1.15em;}
 
         main {max-width:1200px;margin:50px auto;padding:0 20px;}
 
-        /* Hero – now safe if background image is missing */
         .hero-intro {
-            background:#004080;
-            color:white;
-            padding:70px 40px;
-            text-align:center;
-            border-radius:15px;
-            margin-bottom:50px;
-            box-shadow:0 10px 30px rgba(0,0,0,0.3);
-            position:relative;
-            overflow:hidden;
+            background:#004080;color:white;padding:70px 40px;text-align:center;border-radius:15px;margin-bottom:50px;
+            position:relative;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.3);
         }
-        .hero-intro::before {
-            content:"";
-            position:absolute;
-            top:0; left:0; right:0; bottom:0;
-            background:url('well-construction.jpg') center/cover no-repeat;
-            opacity:0.35;
-            z-index:0;
-        }
+        .hero-intro::before {content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:url('well-construction.jpg') center/cover no-repeat;opacity:0.35;z-index:0;}
         .hero-intro > * {position:relative;z-index:1;}
         .hero-intro h2 {font-size:2.8em;margin:0 0 15px;text-shadow:2px 2px 8px rgba(0,0,0,0.7);}
         .hero-intro p {font-size:1.3em;max-width:800px;margin:0 auto;text-shadow:1px 1px 6px rgba(0,0,0,0.7);}
@@ -56,17 +36,33 @@
         h2 {color:#004080;font-size:2.2em;margin-top:0;text-align:center;position:relative;padding-bottom:15px;}
         h2::after {content:'';position:absolute;bottom:0;left:50%;width:100px;height:4px;background:#004080;transform:translateX(-50%);border-radius:2px;}
 
-        .reports-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;margin:40px 0;}
-        .report-card {background:#ffffff;padding:30px 25px;border-radius:15px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.1);transition:all 0.4s ease;}
-        .report-card:hover {transform:translateY(-12px);box-shadow:0 20px 40px rgba(0,64,128,0.2);}
-        .report-card a {font-size:1.35em;font-weight:bold;color:#004080;display:block;margin-bottom:15px;}
-        .download-btn {display:inline-block;background:#004080;color:white;padding:12px 30px;border-radius:50px;font-weight:bold;transition:background 0.3s;}
-        .download-btn:hover {background:#002b5c;text-decoration:none;}
+        .reports-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:35px;margin:40px 0;}
+        .report-card {
+            background:white;padding:40px 25px;border-radius:18px;text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,0.12);transition:all 0.4s ease;position:relative;overflow:hidden;
+        }
+        .report-card:hover {transform:translateY(-15px);box-shadow:0 25px 50px rgba(0,64,128,0.25);}
+
+        /* Option A – Big beautiful year + PDF icon (works right now!) */
+        .report-year {
+            font-size:4.5em;font-weight:bold;color:#004080;opacity:0.15;margin:0;line-height:1;
+        }
+        .pdf-icon {
+            font-size:5em;color:#004080;margin:15px 0;
+        }
+        .download-btn {
+            display:inline-block;background:#004080;color:white;padding:14px 36px;border-radius:50px;
+            font-weight:bold;font-size:1.1em;transition:background 0.3s;
+        }
+        .download-btn:hover {background:#002b5c;}
+
+        /* Option B – Uncomment these lines later if you upload cover thumbnails */
+        /*
+        .report-cover {width:100%;max-height:200px;object-fit:cover;border-radius:12px;margin-bottom:20px;}
+        */
 
         .timeline-embed {width:100%;height:1000px;border:none;border-radius:15px;box-shadow:0 10px 35px rgba(0,0,0,0.2);margin:40px 0;}
-
         footer {background:#004080;color:white;text-align:center;padding:35px;margin-top:80px;}
-        footer p {margin:0;font-size:1.1em;}
     </style>
 </head>
 <body>
@@ -94,36 +90,67 @@
 
     <div class="hero-intro">
         <h2>Annual Reports & Full Timeline</h2>
-        <p>Explore the complete story of JDA's 32-year journey through our detailed annual reports and the comprehensive timeline.</p>
+        <p>Explore the complete story of JDA's 32-year journey through our detailed annual reports and Bob Hedlund's comprehensive timeline.</p>
     </div>
 
     <section>
         <h2>Annual Reports (2015–2020)</h2>
         <p style="text-align:center;font-size:1.2em;color:#555;max-width:900px;margin:0 auto 40px;">
-            These reports showcase the peak years of our work — wells drilled, farmers trained, families lifted out of poverty, and lives changed forever.
+            Click any year below to open or download the full report.
         </p>
 
         <div class="reports-grid">
-            <div class="report-card"><a href="2015-annual-report.pdf" target="_blank">2015 Annual Report</a><p><a href="2015-annual-report.pdf" class="download-btn" target="_blank">Open / Download PDF</a></p></div>
-            <div class="report-card"><a href="2016-annual-report.pdf" target="_blank">2016 Annual Report</a><p><a href="2016-annual-report.pdf" class="download-btn" target="_blank">Open / Download PDF</a></p></div>
-            <div class="report-card"><a href="2017-annual-report.pdf" target="_blank">2017 Annual Report</a><p><a href="2017-annual-report.pdf" class="download-btn" target="_blank">Open / Download PDF</a></p></div>
-            <div class="report-card"><a href="2018-annual-report.pdf" target="_blank">2018 Annual Report</a><p><a href="2018-annual-report.pdf" class="download-btn" target="_blank">Open / Download PDF</a></p></div>
-            <div class="report-card"><a href="2019-annual-report.pdf" target="_blank">2019 Annual Report</a><p><a href="2019-annual-report.pdf" class="download-btn" target="_blank">Open / Download PDF</a></p></div>
-            <div class="report-card"><a href="2020-annual-report.pdf" target="_blank">2020 Annual Report</a><p><a href="2020-annual-report.pdf" class="download-btn" target="_blank">Open / Download PDF</a></p></div>
+
+            <div class="report-card">
+                <div class="report-year">2015</div>
+                <div class="pdf-icon">PDF</div>
+                <!-- Uncomment next line for Option B: <img src="2015-cover.jpg" class="report-cover" alt="2015 Report Cover"> -->
+                <a href="2015-annual-report.pdf" class="download-btn" target="_blank">Open 2015 Report</a>
+            </div>
+
+            <div class="report-card">
+                <div class="report-year">2016</div>
+                <div class="pdf-icon">PDF</div>
+                <a href="2016-annual-report.pdf" class="download-btn" target="_blank">Open 2016 Report</a>
+            </div>
+
+            <div class="report-card">
+                <div class="report-year">2017</div>
+                <div class="pdf-icon">PDF</div>
+                <a href="2017-annual-report.pdf" class="download-btn" target="_blank">Open 2017 Report</a>
+            </div>
+
+            <div class="report-card">
+                <div class="report-year">2018</div>
+                <div class="pdf-icon">PDF</div>
+                <a href="2018-annual-report.pdf" class="download-btn" target="_blank">Open 2018 Report</a>
+            </div>
+
+            <div class="report-card">
+                <div class="report-year">2019</div>
+                <div class="pdf-icon">PDF</div>
+                <a href="2019-annual-report.pdf" class="download-btn" target="_blank">Open 2019 Report</a>
+            </div>
+
+            <div class="report-card">
+                <div class="report-year">2020</div>
+                <div class="pdf-icon">PDF</div>
+                <a href="2020-annual-report.pdf" class="download-btn" target="_blank">Open 2020 Report</a>
+            </div>
+
         </div>
     </section>
 
     <section>
         <h2>Complete 32-Year Timeline (1993–2025)</h2>
-        <p style="text-align:center;font-size:1.2em;color:#555;max-width:900px;margin:0 auto 30px;">
-            JDA's definitive timeline — most major milestones from the very first project in Uzbekistan through closure.
+        <p style="text-align:center;font-size:1.2em;color:#555;margin-bottom:30px;">
+            Bob Hedlund's definitive timeline — every major milestone from founding to closure.
         </p>
 
-        <!-- Change this filename to whatever your actual PDF is named -->
         <iframe src="timeline.pdf" class="timeline-embed" allowfullscreen></iframe>
 
         <p style="text-align:center;margin-top:30px;">
-            <a href="timeline.pdf" class="download-btn" target="_blank" style="font-size:1.2em;padding:15px 40px;">Download Full Timeline PDF</a>
+            <a href="timeline.pdf" class="download-btn" target="_blank" style="font-size:1.2em;padding:16px 44px;">Download Full Timeline PDF</a>
         </p>
     </section>
 
@@ -135,4 +162,3 @@
 
 </body>
 </html>
-
