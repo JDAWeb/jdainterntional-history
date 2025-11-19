@@ -5,59 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JDA International - Closing & Legacy</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.6; color: #333; background: #f9f9f9; }
+body {font-family:Arial,sans-serif;margin:0;padding:0;line-height:1.7;color:#333; background: #f9f9f9; }
         header { text-align: center; padding: 20px; background: #004080; color: white; }
         main { max-width: 800px; margin: 0 auto; }
         .announcement { background: #fff3cd; border: 1px solid #ffeaa7; padding: 20px; margin: 20px 0; border-radius: 5px; }
         nav { text-align: center; margin: 20px 0; }
         nav a { margin: 0 10px; color: #004080; text-decoration: none; font-weight: bold; }
         footer { text-align: center; margin-top: 40px; padding: 10px; background: #004080; color: white; }
-        .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 15px 20px;
-    background: #004080;
-    color: white;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.logo-img {
-    height: 100px;
-    width: auto;
-    max-width: 250px;
-    display: block;
-}
-
-.title-right {
-    flex: 1;
-    text-align: left;
-}
-
-.title-right h1 {
-    margin: 0;
-    font-size: 1.9em;
-}
-
-.title-right p {
-    margin: 5px 0 0;
-    font-size: 1.15em;
-    opacity: 0.95;
-}
-
-/* Mobile */
-@media (max-width: 640px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .logo-img {
-        height: 75px;
-        margin-bottom: 10px;
-    }
-    .title-right h1 { font-size: 1.6em; }
-}
+        
+	.header-container {display:flex;align-items:center;flex-wrap:wrap;gap:20px;max-width:1200px;margin:0 auto;}
+        .logo-img {height:100px;width:auto;max-width:250px;transition:transform 0.3s;}
+        .logo-img:hover {transform:scale(1.05);}
+        .title-right {flex:1;text-align:left;}
+        .title-right h1 {margin:0;font-size:2.1em;letter-spacing:0.5px;}
+        .title-right p {margin:5px 0 0;font-size:1.2em;opacity:0.95;}
+        @media (max-width:640px) {
+            .header-container {flex-direction:column;text-align:center;}
+            .logo-img {height:75px;}
+            .title-right h1 {font-size:1.7em;}
+        }
     </style>
 </head>
 <body>
@@ -95,12 +61,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
