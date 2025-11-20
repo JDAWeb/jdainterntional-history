@@ -35,7 +35,9 @@
 
         nav { text-align: center; padding: 15px; background: #003060; }
         nav a { color: white; margin: 0 15px; font-weight: bold; }
-
+        nav a.active {
+        color:#a0d8ff;border-bottom:3px solid #a0d8ff;padding-bottom:4px;               
+        }
         main { max-width: 1100px; margin: 0 auto; padding: 20px; }
         section { background: white; margin: 25px 0; padding: 25px; border-radius: 8px; box-shadow: 0 3px 12px rgba(0,0,0,0.1); }
 
@@ -115,7 +117,7 @@
 
 <nav>
     <a href="index.html">Home</a> |
-    <a href="history.html">Our History</a> |
+    <a href="history.html" class="active">Our History</a>
     <a href="reports.html">Annual Reports & Timeline</a> |
     <a href="contact.html">Contact & Legacy</a>
 </nav>
@@ -213,6 +215,7 @@
 </body>
 
 </html>
+
 
 
 
