@@ -5,13 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact & Legacy - JDA International</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.6; color: #333; background: #f9f9f9; }
-        header { text-align: center; padding: 20px; background: #004080; color: white; }
+        body {font-family:Arial,sans-serif;margin:0;padding:0;line-height:1.7;color:#333;background:linear-gradient(to bottom,#f0f4f8,#ffffff);}
+	    header { text-align: center; padding: 20px; background: #004080; color: white; }
         main { max-width: 800px; margin: 0 auto; }
         section { background: white; margin: 20px 0; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         .contact-info { font-weight: bold; }
-        nav { text-align: center; margin: 20px 0; }
-        nav a { margin: 0 10px; color: #004080; text-decoration: none; font-weight: bold; }
+        
+        nav {
+    background:#002b5c !important;          /* Dark navy background – forced */
+    padding:18px 20px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    margin:0;
+    width:100vw;
+    position:relative;
+    left:50%;
+    right:50%;
+    margin-left:-50vw;
+    margin-right:-50vw;
+    color:white !important;                 /* Ensures text stays white */
+}
+
+nav a {
+    color:white !important;                 /* White links – forced */
+    margin:0 22px;
+    font-weight:bold;
+    font-size:1.15em;
+    text-decoration:none;
+    transition:color 0.3s;
+}
+
+nav a:hover {color:#a0d8ff !important;}
+nav a.active {
+    color:#a0d8ff !important;
+    border-bottom:3px solid #a0d8ff;
+    padding-bottom:4px;
+}
+        
+        
         footer { text-align: center; margin-top: 40px; padding: 10px; background: #004080; color: white; }
        .header-container {
             display: flex;
@@ -50,8 +81,8 @@
             <a href="index.html">Home</a> |
             <a href="history.html">Our History</a> |
             <a href="reports.html">Annual Reports & Timeline</a> |
-            <a href="contact.html">Contact & Legacy</a>
-        
+            <a href="contact.html" class="active">Contact & Legacy</a>
+      
         </nav>
         <section>
             <h2>A Message of Thanks</h2>
@@ -81,6 +112,7 @@
 </body>
 
 </html>
+
 
 
 
