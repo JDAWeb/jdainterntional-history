@@ -26,23 +26,42 @@
         main {max-width:1200px;margin:50px auto;padding:0 20px;}
 
         .hero-intro {
-            background:#004080;color:#ffffff;padding:70px 40px;text-align:center;border-radius:15px;margin-bottom:50px;
-            position:relative;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.3);
-        }
-        .hero-intro::before {content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:url('well-construction.jpg') center/cover no-repeat;opacity:0.35;z-index:0;}
-        .hero-intro > * {position:relative;z-index:1;}
-        .hero-intro h2 {font-size:2.8em;margin:0 0 15px;text-shadow:2px 2px 8px rgba(0,0,0,0.7);}
-        .hero-intro p {font-size:1.3em;max-width:800px;margin:0 auto;text-shadow:1px 1px 6px rgba(0,0,0,0.7);}
+    background:#004080;
+    color:#ffffff;                     /* Pure white text */
+    padding:70px 40px;
+    text-align:center;
+    border-radius:15px;
+    margin-bottom:50px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
 
-        section {background:white;padding:45px;margin-bottom:50px;border-radius:15px;box-shadow:0 8px 25px rgba(0,0,0,0.12);}
-        h2 {color:#004080;font-size:2.2em;margin-top:0;text-align:center;position:relative;padding-bottom:15px;}
-        h2::after {content:'';position:absolute;bottom:0;left:50%;width:100px;height:4px;background:#004080;transform:translateX(-50%);border-radius:2px;}
+/* Background photo (optional – still shows through faintly) */
+.hero-intro::before {
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background:url('well-construction.jpg') center/cover no-repeat;
+    opacity:0.35;
+    z-index:0;
+}
 
-        .reports-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:35px;margin:40px 0;}
-        .report-card {
-            background:white;padding:40px 25px;border-radius:18px;text-align:center;
-            box-shadow:0 10px 25px rgba(0,0,0,0.12);transition:all 0.4s ease;position:relative;overflow:hidden;
-        }
+/* Make sure all text inside is bright and readable */
+.hero-intro > * {position:relative; z-index:1;}
+.hero-intro h2 {
+    font-size:2.8em;
+    margin:0 0 15px;
+    color:#ffffff !important;          /* Force white */
+    text-shadow:2px 2px 10px rgba(0,0,0,0.8);   /* Strong readable shadow */
+}
+.hero-intro p {
+    font-size:1.3em;
+    max-width:800px;
+    margin:0 auto;
+    color:#f0f8ff !important;         /* Very light blue-white */
+    text-shadow:1px 1px 8px rgba(0,0,0,0.8);
+}
         .report-card:hover {transform:translateY(-15px);box-shadow:0 25px 50px rgba(0,64,128,0.25);}
 
         /* Option A – Big beautiful year + PDF icon (works right now!) */
@@ -167,6 +186,7 @@
 
 </body>
 </html>
+
 
 
 
