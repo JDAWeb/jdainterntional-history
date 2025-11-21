@@ -23,13 +23,13 @@
        header { background:#004080;color:white;padding:20px 0;box-shadow:0 4px 15px rgba(0,0,0,0.15);width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw; }
         .header-container { max-width:1200px;margin:0 auto;padding:0 20px;box-sizing:border-box; }
         .logo-img {height:100px;width:auto;max-width:240px;transition:transform 0.3s;}
-        .title-right { flex: 1; text-align: left; }
-        .title-right h1 { margin: 0; font-size: 1.9em; }
-        .title-right p { margin: 5px 0 0; font-size: 1.15em; opacity: 0.95; }
-        @media (max-width: 640px) {
-            .header-container { flex-direction: column; text-align: center; }
-            .logo-img { height: 70px; }
-            .title-right h1 { font-size: 1.7em; }
+        .logo-img:hover {transform:scale(1.05);}
+        .title-right {flex:1;text-align:left;}
+        .title-right h1 {margin:0;font-size:2.1em;letter-spacing:0.5px;}
+        .title-right p {margin:5px 0 0;font-size:1.2em;opacity:0.95;}
+        @media (max-width:640px) {.header-container {flex-direction:column;text-align:center;}
+            .logo-img {height:75px;}
+            .title-right h1 {font-size:1.7em;} 
         }
 
         nav { background:#002b5c;padding:18px 20px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.1);margin:0;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;color:white;
@@ -215,6 +215,7 @@
 </body>
 
 </html>
+
 
 
 
