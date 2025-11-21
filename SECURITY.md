@@ -20,7 +20,7 @@ If you discover anything that appears to be:
 - A broken link that should be fixed
 
 Please contact:  
-**Bob Hedlund**  
+**administrator**  
 Email: legacy@jdainternational.org
 
 We will respond within 48 hours and remove or correct anything inappropriate.
