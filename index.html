@@ -18,6 +18,7 @@
 body {font-family:Arial,sans-serif;margin:0;padding:0;line-height:1.7;color:#333; background: #f9f9f9; }
         header { background:#004080;color:white;padding:20px 0;box-shadow:0 4px 15px rgba(0,0,0,0.15);width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw; }
  }
+		.header-container { max-width:1200px;margin:0 auto;padding:0 20px;box-sizing:border-box; }
         main { max-width: 800px; margin: 0 auto; }
         .announcement { background: #fff3cd; border: 1px solid #ffeaa7; padding: 20px; margin: 20px 0; border-radius: 5px; }
         
@@ -29,14 +30,13 @@ body {font-family:Arial,sans-serif;margin:0;padding:0;line-height:1.7;color:#333
 }
 		footer { text-align: center; margin-top: 40px; padding: 10px; background: #004080; color: white; }
         
-	.header-container { max-width:1200px;margin:0 auto;padding:0 20px;box-sizing:border-box; }
+	
         .logo-img {height:100px;width:auto;max-width:240px;transition:transform 0.3s;}
         .logo-img:hover {transform:scale(1.05);}
         .title-right {flex:1;text-align:left;}
         .title-right h1 {margin:0;font-size:2.1em;letter-spacing:0.5px;}
         .title-right p {margin:5px 0 0;font-size:1.2em;opacity:0.95;}
-        @media (max-width:640px) {
-            .header-container {flex-direction:column;text-align:center;}
+        @media (max-width:640px) {.header-container {flex-direction:column;text-align:center;}
             .logo-img {height:75px;}
             .title-right h1 {font-size:1.7em;}
         }
@@ -81,6 +81,7 @@ body {font-family:Arial,sans-serif;margin:0;padding:0;line-height:1.7;color:#333
 </body>
 
 </html>
+
 
 
 
