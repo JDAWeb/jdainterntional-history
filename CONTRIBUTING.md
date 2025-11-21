@@ -12,7 +12,7 @@ It is now in **maintenance-only / archival mode**.
 | Typo fixes, broken link fixes| Yes      | Open a GitHub issue or submit a pull request                                  |
 | Better photo captions        | Yes      | Open an issue with the suggested caption and photo name                       |
 | Improved alt text            | Yes      | Same as above                                                                 |
-| New historical photos / documents (with permission) | Yes | Contact Bob directly first (see below)                                        |
+| New historical photos / documents (with permission) | Yes | Contact administrator directly first (see below)                                        |
 | Major redesigns or new pages | No       | The site is intentionally frozen to preserve the historical record as-is     |
 
 ### How to report an issue or suggest a change
