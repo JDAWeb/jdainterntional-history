@@ -27,7 +27,27 @@
         .title-right {flex:1;text-align:left;}
         .title-right h1 {margin:0;font-size:2.1em;}
         .title-right p {margin:5px 0 0;font-size:1.2em;opacity:0.95;}
-        @media (max-width:640px) {.header-container {flex-direction:column;text-align:center;}.logo-img {height:75px; }}
+        @media (max-width:640px) {
+            .header-container {flex-direction:row;gap:16px;padding:0 15px; }
+            .logo-img {height:75px;}
+            .title-right h1 {font-size:0.95em;}
+			.title-right p { font-size:0.95em; }
+		}
+		@media (max-width: 640px) {
+			nav a {
+        	font-size: 0.95em !important;
+        	margin: 0 14px; }
+	}
+	/* Only stack vertically on extremely tiny screens (optional) */
+		@media (max-width: 420px) {
+    		.header-container { flex-direction:column;text-align:center; }
+    		.title-right {text-align:center;nav a }
+		}
+		@media (max-width: 420px) {	
+			nav a {
+		   	font-size: 0.9em !important;
+        	margin: 0 12px; }
+    }
 
         nav { background:#002b5c;padding:18px 20px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.1);margin:0;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;color:white;
 }
@@ -117,7 +137,7 @@
 <nav>
     <a href="index.html">Home</a> |
     <a href="history.html">History</a> |
-    <a href="reports.html" class="active">Annual Reports</a> |
+    <a href="reports.html" class="active">Reports</a> |
     <a href="contact.html">Contact</a>
 </nav>
 <main>
@@ -201,6 +221,7 @@
 
 </body>
 </html>
+
 
 
 
