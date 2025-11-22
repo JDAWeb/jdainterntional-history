@@ -62,13 +62,23 @@ nav a.active {
         @media (max-width:640px) {
             .header-container {flex-direction:row;gap:16px;padding:0 15px; }
             .logo-img {height:75px;}
-            .title-right h1 {font-size:1.5em;}
-	.title-right p { font-size:1em; }
-}
+            .title-right h1 {font-size:0.95em;}
+			.title-right p { font-size:0.95em; }
+		}
+		@media (max-width: 640px) {
+			nav a {
+        	font-size: 0.95em !important;
+        	margin: 0 14px; }
+	}
 	/* Only stack vertically on extremely tiny screens (optional) */
-	@media (max-width: 420px) {
-    	.header-container { flex-direction:column;text-align:center; }
-    .title-right {text-align:center;
+		@media (max-width: 420px) {
+    		.header-container { flex-direction:column;text-align:center; }
+    		.title-right {text-align:center;nav a }
+		}
+		@media (max-width: 420px) {	
+			nav a {
+		   	font-size: 0.9em !important;
+        	margin: 0 12px; }
     }
 
     </style>
@@ -89,7 +99,7 @@ nav a.active {
         <nav>
             <a href="index.html">Home</a> |
             <a href="history.html">History</a> |
-            <a href="reports.html">Reports & Timeline</a> |
+            <a href="reports.html">Reports</a> |
             <a href="contact.html" class="active">Contact</a>
       
         </nav>
@@ -121,6 +131,7 @@ nav a.active {
 </body>
 
 </html>
+
 
 
 
