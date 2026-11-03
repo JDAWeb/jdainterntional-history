@@ -1,249 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2815QDR9M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y2815QDR9M');
-    <meta name=google-site-verification=aTBK6PQRtGtnypRNNGN8h_lc9Oz2TFs3aw9qeg8q960
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annual Reports & Timeline - JDA International</title>
-    <style>
-        body {font-family:Arial,sans-serif;margin:0;padding:0;line-height:1.7;color:#333;background:linear-gradient(to bottom,#f0f4f8,#ffffff);}
-        a {color:#004080;text-decoration:none;}
-        a:hover {text-decoration:underline;}
-
-       header {
-    background:#004080;color:white;padding:18px 0;box-shadow:0 4px 15px rgba(0,0,0,0.15);width:100vw !important;position:relative !important;left:50% !important;right:50% !important;margin-left:-50vw !important;margin-right:-50vw !important;
-}
-        .header-container { display:flex;align-items:center;justify-content:flex-start;gap:24px;max-width:1200px;margin:0 auto;padding:0 20px;box-sizing:border-box; }
-        
-		.logo-img {height:100px;width:auto;max-width:240px;transition:transform 0.3s;}
-        .logo-img:hover {transform:scale(1.05);}
-        .title-right {flex:1;text-align:left;}
-        .title-right h1 {margin:0;font-size:2.1em;}
-        .title-right p {margin:5px 0 0;font-size:1.2em;opacity:0.95;}
-        @media (max-width:640px) {
-            .header-container {flex-direction:row;gap:16px;padding:0 15px; }
-            .logo-img {height:75px;}
-            .title-right h1 {font-size:0.95em;}
-			.title-right p { font-size:0.95em; }
-		}
-		@media (max-width: 640px) {
-			nav a {
-        	font-size: 0.95em !important;
-        	margin: 0 14px; }
-	}
-	/* Only stack vertically on extremely tiny screens (optional) */
-		@media (max-width: 420px) {
-    		.header-container { flex-direction:column;text-align:center; }
-    		.title-right {text-align:center;nav a }
-		}
-		@media (max-width: 420px) {	
-			nav a {
-		   	font-size: 0.9em !important;
-        	margin: 0 12px; }
-    }
-
-        nav { background:#002b5c;padding:18px 20px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.1);margin:0;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;color:white;
-}
-        nav a {color:white;margin:0 22px;font-weight:bold;font-size:1.15em;text-decoration:none;transition:color 0.3s; }
-        nav a:hover {color:#a0d8ff;text-decoration:none !important;}
-        nav a.active {
-        color:#a0d8ff;border-bottom:3px solid #a0d8ff;padding-bottom:4px;               
-        }
-        main {max-width:1200px;margin:50px auto;padding:0 20px;}
-
-        .hero-intro {
-    background:#004080;
-    color:#ffffff;
-    padding:70px 40px;
-    text-align:center;
-    border-radius:15px;
-    margin-bottom:50px;
-    position:relative;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,0.3);
-}
-.hero-intro::before {
-    content:"";
-    position:absolute;
-    top:0; left:0; right:0; bottom:0;
-    background:url('well-construction.jpg') center/cover no-repeat;
-    opacity:0.35;
-    z-index:0;
-}
-
-.hero-intro > * {position:relative; z-index:1;}
-.hero-intro h2 {
-    font-size:2.8em;
-    margin:0 0 15px;
-    color:#ffffff !important;          /* Force white */
-    text-shadow:2px 2px 10px rgba(0,0,0,0.8);   /* Strong readable shadow */
-}
-.hero-intro p {
-    font-size:1.3em;
-    max-width:800px;
-    margin:0 auto;
-    color:#f0f8ff !important;         /* Very light blue-white */
-    text-shadow:1px 1px 8px rgba(0,0,0,0.8);
-}
-        .reports-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:35px;margin:40px 0;}
-        .report-card {
-            background:white;padding:40px 25px;border-radius:18px;text-align:center;
-            box-shadow:0 10px 25px rgba(0,0,0,0.12);transition:all 0.4s ease;position:relative;overflow:hidden;
-        }
-        .report-card:hover {transform:translateY(-15px);box-shadow:0 25px 50px rgba(0,64,128,0.25);}
-
-        /* Option A – Big beautiful year + PDF icon (works right now!) */
-        .report-year {
-            font-size:4.5em;font-weight:bold;color:#004080;opacity:0.15;margin:0;line-height:1;
-        }
-        .pdf-icon {
-            font-size:5em;color:#004080;margin:15px 0;
-        }
-        .download-btn {
-            display:inline-block;background:#004080;color:white;padding:14px 36px;border-radius:50px;
-            font-weight:bold;font-size:1.1em;transition:background 0.3s;
-        }
-        .download-btn:hover {background:#002b5c;}
-
-        /* Option B – Uncomment these lines later if you upload cover thumbnails */
-        
-        .report-cover {width:100%;max-height:200px;object-fit:cover;border-radius:12px;margin-bottom:20px;}
-        
-        .timeline-embed {width:100%;height:1000px;border:none;border-radius:15px;box-shadow:0 10px 35px rgba(0,0,0,0.2);margin:40px 0;}
-        footer {background:#004080;color:white;text-align:center;padding:35px;margin-top:80px;}
-    </style>
+    <title>Annual Reports | JDA International</title>
+    <meta name="description" content="JDA International annual reports from 2000 to 2020 and the The JDA timeline, as PDF downloads.">
+    <meta name="google-site-verification" content="aTBK6PQRtGtnypRNNGN8h_lc9Oz2TFs3aw9qeg8q960">
+    <link rel="canonical" href="https://jdainternational.org/reports.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="JDA International">
+    <meta property="og:title" content="Annual Reports">
+    <meta property="og:description" content="JDA International annual reports from 2000 to 2020 and the The JDA timeline, as PDF downloads.">
+    <meta property="og:image" content="https://jdainternational.org/assets/img/report-2020-cover.jpg">
+    <meta property="og:image:alt" content="Cover of the JDA 2020 annual report">
+    <meta property="og:url" content="https://jdainternational.org/reports.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/source-serif-4-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/site.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2815QDR9M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Y2815QDR9M');
+    </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<header>
-    <div class="header-container">
-        <div class="logo-left">
-            <a href="index.html"><img src="jda-logo.png" alt="JDA International Logo" class="logo-img"></a>
-        </div>
-        <div class="title-right">
-            <h1>Joint Development Associates International</h1>
-            <p>Transforming Lives in Central Asia for 32 Years</p>
-        </div>
+<!-- ============ SHARED HEADER: keep identical on every page ============
+     On each page, move aria-current="page" to that page's nav link. -->
+<header class="site-header">
+    <div class="wrap">
+        <a class="brand" href="index.html">
+            <img src="assets/img/jda-logo-240.png" width="240" height="136" alt="">
+            <span>
+                <span class="brand-name">JDA International</span>
+                <span class="brand-sub">Joint Development Associates, 1993 to 2025</span>
+            </span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-story.html">Our Story</a></li>
+                <li class="has-sub">
+                    <a href="where-we-worked.html">Where We Worked</a>
+                    <ul class="sub">
+                        <li><a href="uzbekistan.html">Uzbekistan</a></li>
+                        <li><a href="afghanistan.html">Afghanistan</a></li>
+                        <li><a href="kurdistan.html">Iraqi Kurdistan</a></li>
+                    </ul>
+                </li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="reports.html" aria-current="page">Reports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
+<!-- ============ END SHARED HEADER ============ -->
 
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="history.html">History</a> |
-    <a href="reports.html" class="active">Reports</a> |
-    <a href="contact.html">Contact</a>
-</nav>
-<main>
+<main id="main">
 
-    <div class="hero-intro">
-        <h2>Annual Reports & Full Timeline</h2>
-        <p>Explore the complete story of JDA's 32-year journey through our detailed annual reports and the comprehensive timeline.</p>
-    </div>
-
-    <section>
-        <h2>Annual Reports (2015–2020)</h2>
-        <p style="text-align:center;font-size:1.2em;color:#555;max-width:900px;margin:0 auto 40px;">
-            Click any year below to open or download the full report.
-        </p>
-
-        <div class="reports-grid">
-
-            <div class="report-card">
-                <div class="report-year">2015</div>
-                <div class="pdf-icon">PDF</div>
-                <img src="2015-cover.jpg" class="report-cover" alt="2015 Report Cover">
-                <a href="2015-annual-report.pdf" class="download-btn" target="_blank">Open 2015 Report</a>
-            </div>
-
-            <div class="report-card">
-                <div class="report-year">2016</div>
-                <div class="pdf-icon">PDF</div>
-                <img src="2016-cover.jpg" class="report-cover" alt="2016 Report Cover">
-                <a href="2016-annual-report.pdf" class="download-btn" target="_blank">Open 2016 Report</a>
-            </div>
-
-            <div class="report-card">
-                <div class="report-year">2017</div>
-                <div class="pdf-icon">PDF</div>
-                <img src="2017-cover.jpg" class="report-cover" alt="2017 Report Cover">
-                <a href="2017-annual-report.pdf" class="download-btn" target="_blank">Open 2017 Report</a>
-            </div>
-
-            <div class="report-card">
-                <div class="report-year">2018</div>
-                <div class="pdf-icon">PDF</div>
-                <img src="2018-cover.jpg" class="report-cover" alt="2018 Report Cover">
-                <a href="2018-annual-report.pdf" class="download-btn" target="_blank">Open 2018 Report</a>
-            </div>
-
-            <div class="report-card">
-                <div class="report-year">2019</div>
-                <div class="pdf-icon">PDF</div>
-                <img src="2019-cover.jpg" class="report-cover" alt="2019 Report Cover">
-                <a href="2019-annual-report.pdf" class="download-btn" target="_blank">Open 2019 Report</a>
-            </div>
-
-            <div class="report-card">
-                <div class="report-year">2020</div>
-                <div class="pdf-icon">PDF</div>
-                <img src="2020-cover.jpg" class="report-cover" alt="2020 Report Cover">
-                <a href="2020-annual-report.pdf" class="download-btn" target="_blank">Open 2020 Report</a>
-            </div>
-
+    <section class="page-hero" aria-labelledby="page-title">
+        <div class="wrap">
+            <p class="eyebrow">Reports</p>
+            <h1 id="page-title">Annual reports and timeline</h1>
+            <p class="lede">JDA's annual reports from 2000 to 2020, with the names of local people removed.</p>
         </div>
     </section>
 
-    <section>
-        <h2>Complete 32-Year Timeline (1993–2025)</h2>
-        <p style="text-align:center;font-size:1.2em;color:#555;margin-bottom:30px;">
-            JDA's definitive timeline — most major milestones from founding to closure.
-        </p>
+    <section class="section" aria-labelledby="timeline-title">
+        <div class="wrap">
+            <div class="download">
+                <a href="timeline.pdf"><img src="assets/img/report-timeline-cover.jpg" srcset="assets/img/report-timeline-cover.jpg 360w" sizes="12rem" width="360" height="202" loading="lazy" alt="First page of the JDA timeline"></a>
+                <div>
+                    <h2 id="timeline-title">The JDA timeline</h2>
+                    <p>A 16-page illustrated chart of JDA's programs in Uzbekistan, Afghanistan and Iraqi Kurdistan, with program totals as JDA recorded them. A clickable version is on the <a href="our-story.html#timeline">Our Story page</a>.</p>
+                    <p><a class="button" href="timeline.pdf">Download the timeline</a> <span class="report-meta">PDF, 16 pages, 1.9 MB</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <iframe src="timeline.pdf" class="timeline-embed" allowfullscreen></iframe>
-
-        <p style="text-align:center;margin-top:30px;">
-            <a href="timeline.pdf" class="download-btn" target="_blank" style="font-size:1.2em;padding:16px 44px;">Download Full Timeline PDF</a>
-        </p>
+    <section class="section section--tint" aria-labelledby="reports-title">
+        <div class="wrap">
+            <div class="section-head">
+                <h2 id="reports-title">Annual reports</h2>
+                <p class="lede">Newest first. Select a cover to open the report. Press releases, newsletters and program reports are on the <a href="resources.html">Publications page</a>.</p>
+            </div>
+            <ul class="report-grid">
+                <li>
+                    <a class="cover" href="2020-annual-report.pdf"><img src="assets/img/report-2020-cover.jpg" srcset="assets/img/report-2020-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="360" loading="lazy" alt="Cover of the JDA 2020 annual report"></a>
+                    <p class="report-year"><a href="2020-annual-report.pdf">2020</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 13 pages, 1.2 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="2019-annual-report.pdf"><img src="assets/img/report-2019-cover.jpg" srcset="assets/img/report-2019-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="360" loading="lazy" alt="Cover of the JDA 2019 annual report"></a>
+                    <p class="report-year"><a href="2019-annual-report.pdf">2019</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 24 pages, 2.7 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="2018-annual-report.pdf"><img src="assets/img/report-2018-cover.jpg" srcset="assets/img/report-2018-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="360" loading="lazy" alt="Cover of the JDA 2018 annual report"></a>
+                    <p class="report-year"><a href="2018-annual-report.pdf">2018</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 24 pages, 4.2 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="2017-annual-report.pdf"><img src="assets/img/report-2017-cover.jpg" srcset="assets/img/report-2017-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="510" loading="lazy" alt="Cover of the JDA 2017 annual report"></a>
+                    <p class="report-year"><a href="2017-annual-report.pdf">2017</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 20 pages, 3.2 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="2016-annual-report.pdf"><img src="assets/img/report-2016-cover.jpg" srcset="assets/img/report-2016-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="274" loading="lazy" alt="Cover of the JDA 2016 annual report"></a>
+                    <p class="report-year"><a href="2016-annual-report.pdf">2016</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 22 pages, 5.1 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="2015-annual-report.pdf"><img src="assets/img/report-2015-cover.jpg" srcset="assets/img/report-2015-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="466" loading="lazy" alt="Cover of the JDA 2015 annual report"></a>
+                    <p class="report-year"><a href="2015-annual-report.pdf">2015</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 21 pages, 6.7 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="assets/reports/jda-annual-report-2014.pdf"><img src="assets/img/report-2014-cover.jpg" srcset="assets/img/report-2014-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="278" loading="lazy" alt="Cover of the JDA 2014 annual report"></a>
+                    <p class="report-year"><a href="assets/reports/jda-annual-report-2014.pdf">2014</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 16 pages, 7.7 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="assets/reports/jda-annual-report-2013.pdf"><img src="assets/img/report-2013-cover.jpg" srcset="assets/img/report-2013-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="278" loading="lazy" alt="Cover of the JDA 2013 annual report"></a>
+                    <p class="report-year"><a href="assets/reports/jda-annual-report-2013.pdf">2013</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 16 pages, 1.9 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="assets/reports/jda-annual-report-2012.pdf"><img src="assets/img/report-2012-cover.jpg" srcset="assets/img/report-2012-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="466" loading="lazy" alt="Cover of the JDA 2012 annual report"></a>
+                    <p class="report-year"><a href="assets/reports/jda-annual-report-2012.pdf">2012</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 13 pages, 1.5 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="assets/reports/jda-annual-report-2005.pdf"><img src="assets/img/report-2005-cover.jpg" srcset="assets/img/report-2005-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="522" loading="lazy" alt="Cover of the JDA 2005 annual report"></a>
+                    <p class="report-year"><a href="assets/reports/jda-annual-report-2005.pdf">2005</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 12 pages, 1.9 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="assets/reports/jda-annual-report-2004.pdf"><img src="assets/img/report-2004-cover.jpg" srcset="assets/img/report-2004-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="522" loading="lazy" alt="Cover of the JDA 2004 annual report"></a>
+                    <p class="report-year"><a href="assets/reports/jda-annual-report-2004.pdf">2004</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 16 pages, 3.3 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="assets/reports/jda-annual-report-2003.pdf"><img src="assets/img/report-2003-cover.jpg" srcset="assets/img/report-2003-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="278" loading="lazy" alt="Cover of the JDA 2003 annual report"></a>
+                    <p class="report-year"><a href="assets/reports/jda-annual-report-2003.pdf">2003</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 20 pages, 713 KB</p>
+                </li>
+                <li>
+                    <a class="cover" href="assets/reports/jda-annual-report-2002.pdf"><img src="assets/img/report-2002-cover.jpg" srcset="assets/img/report-2002-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="276" loading="lazy" alt="Cover of the JDA 2002 annual report"></a>
+                    <p class="report-year"><a href="assets/reports/jda-annual-report-2002.pdf">2002</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 20 pages, 1.4 MB</p>
+                </li>
+                <li>
+                    <a class="cover" href="assets/reports/jda-annual-report-2000.pdf"><img src="assets/img/report-2000-cover.jpg" srcset="assets/img/report-2000-cover.jpg 360w" sizes="(max-width: 520px) 50vw, 12rem" width="360" height="466" loading="lazy" alt="Cover of the JDA 2000 annual report"></a>
+                    <p class="report-year"><a href="assets/reports/jda-annual-report-2000.pdf">2000</a></p>
+                    <p class="report-meta">Annual report &middot; PDF, 1 page, 380 KB</p>
+                </li>
+            </ul>
+            <div class="note">
+                <p><strong>About these reports.</strong> Reports for 2001 and for 2006 to 2011 were not found in JDA's archive. The file once labeled as the 2001 report is the report for 2000. To protect the people JDA served and worked with, the names of beneficiaries, local staff and individual donors, along with local phone numbers and personal email addresses, have been removed from these files. Photos are not altered: names are withheld, not faces. The files are otherwise as originally published. Financial statements and tax filings are not posted on this site.</p>
+            </div>
+        </div>
     </section>
 
 </main>
 
-<footer>
-    <p>© 2025 JDA International — Preserving a 32-Year Legacy of Hope & Impact</p>
+<!-- ============ SHARED FOOTER: keep identical on every page ============ -->
+<footer class="site-footer">
+    <div class="wrap">
+        <div class="footer-grid">
+            <div>
+                <p class="footer-title">Joint Development Associates International</p>
+                <p>Community development in Uzbekistan, Afghanistan, and Iraqi Kurdistan, 1993 to 2025. JDA closed operations in October 2025.</p>
+            </div>
+            <div>
+                <p class="footer-head">Contact</p>
+                <ul>
+                    <li><a href="mailto:legacy@jdainternational.org">legacy@jdainternational.org</a></li>
+                    <li>Grand Junction, Colorado</li>
+                    <li>EIN 84-1286934</li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-head">Explore</p>
+                <ul>
+                    <li><a href="our-story.html">Our Story</a></li>
+                    <li><a href="where-we-worked.html">Where We Worked</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="resources.html">Publications</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-base">
+            <p>&copy; 1993-2026 Joint Development Associates International, Inc. All rights reserved. No copying or reuse without written permission.</p>
+        </div>
+    </div>
 </footer>
+<!-- ============ END SHARED FOOTER ============ -->
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
